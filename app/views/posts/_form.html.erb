@@ -1,0 +1,20 @@
+<%= form_with(url: '/posts', local: true) do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, value: post.title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, value: post.body  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :published %>
+    <%= form.check_box :published, value: post.published %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
