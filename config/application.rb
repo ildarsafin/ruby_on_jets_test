@@ -1,6 +1,8 @@
 Jets.application.configure do
   config.project_name = "awesome-app"
   config.mode = "html"
+  config.iam_policy = ["dynamodb"]
+
 
   config.prewarm.enable = true # default is true
   # config.prewarm.rate = '30 minutes' # default is '30 minutes'
